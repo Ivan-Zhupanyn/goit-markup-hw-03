@@ -41,6 +41,11 @@ img {
 .header {
   border-bottom: 1px solid #e7e9fc;
 }
+.new-head {
+  display: flex;
+  align-items: center;
+}
+
 .nav-head {
   display: flex;
   align-items: center;
