@@ -54,6 +54,8 @@ img {
   display: flex;
   align-items: center;
   gap: 40px;
+}
+.head-list {
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -94,7 +96,6 @@ img {
 }
 .address-list {
   display: flex;
-
   margin-left: 332px;
   gap: 40px;
 }
