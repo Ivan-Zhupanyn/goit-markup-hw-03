@@ -40,7 +40,6 @@ img {
 /* Header */
 .header {
   border-bottom: 1px solid #e7e9fc;
-  display: flex;
 }
 .nav-head {
   display: flex;
@@ -48,6 +47,7 @@ img {
 }
 .nav-list {
   display: flex;
+  align-items: center;
   gap: 40px;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -80,7 +80,6 @@ img {
 }
 .address {
   display: flex;
-  align-items: center;
   font-style: inherit;
   font-weight: 400;
   font-size: 16px;
@@ -89,8 +88,9 @@ img {
   color: var(--main-text-color);
 }
 .address-list {
-  margin-left: 332px;
   display: flex;
+
+  margin-left: 332px;
   gap: 40px;
 }
 .address-link {
@@ -107,6 +107,8 @@ img {
   padding-bottom: 188px;
 }
 .hero-title {
+  margin-right: auto;
+  margin-left: auto;
   padding-bottom: 48px;
   max-width: 496px;
   font-weight: 700;
@@ -118,6 +120,8 @@ img {
 }
 .hero-btn {
   display: block;
+  margin-right: auto;
+  margin-left: auto;
   min-width: 169px;
   height: 56px;
   font-family: inherit;
@@ -266,10 +270,14 @@ img {
 .filter-list {
   display: flex;
   justify-content: center;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
   gap: 24px;
 }
 .filter-btn {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
   font-family: inherit;
   background: #f4f4fd;
   border: 1px solid #e7e9fc;
@@ -290,21 +298,29 @@ img {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   color: #ffffff;
+  border: 1px solid transparent;
 }
 /* Portfolio cards */
-.card-list {
-}
+
 .row {
   display: flex;
-  gap: 24px;
-  margin-bottom: 48px;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 .portfolio-cards {
   box-sizing: border-box;
-  width: 360px;
+  width: calc((100% - 48px) / 3);
   height: 420px;
   background: #ffffff;
+}
+.portfolio-card-content {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
   border: 1px solid #e7e9fc;
+  border-top: none;
 }
 .card-title {
   font-weight: 500;
@@ -312,6 +328,7 @@ img {
   line-height: 1.2em;
   letter-spacing: 0.02em;
   color: var(--heading-text-color);
+  margin-bottom: 8px;
 }
 .card-desc {
   font-weight: 400;
