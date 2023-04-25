@@ -86,6 +86,8 @@ img {
   color: var(--heading-text-color);
 }
 .address {
+  padding-top: 24px;
+  padding-bottom: 24px;
   display: flex;
   font-style: inherit;
   font-weight: 400;
